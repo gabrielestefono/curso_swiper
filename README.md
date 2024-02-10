@@ -26,7 +26,7 @@ O repositório está organizado da seguinte forma:
 
 **Recursos**
 
-* **Documentação oficial do Swiper:** [https://swiperjs.com/react](https://swiperjs.com/swiper-api)
+* **Documentação oficial do Swiper:** [https://swiperjs.com/element](https://swiperjs.com/element)
 
 **Contribuições**
 
