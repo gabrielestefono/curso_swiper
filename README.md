@@ -1,40 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Readme para Curso de Swiper
 
-## Getting Started
+**Introdução**
 
-First, run the development server:
+Este repositório documenta meu curso de aprendizado sobre o Swiper, uma biblioteca JavaScript para criar sliders responsivos e interativos. O curso consiste em:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* Leitura da documentação oficial do Swiper;
+* Anotações em arquivos Markdown;
+* Criação de páginas para aplicar o conhecimento adquirido.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Objetivos**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Ao final do curso, pretendo:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+* Compreender completamente os recursos e funcionalidades do Swiper;
+* Ser capaz de criar sliders personalizados com o Swiper;
+* Dominar as melhores práticas para usar o Swiper em meus projetos.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Conteúdo**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+O repositório está organizado da seguinte forma:
 
-## Learn More
+* **Pasta `docs`:** Contém as anotações em Markdown da documentação oficial do Swiper.
+* **Pasta `pages`:** Contém as páginas criadas para aplicar o conhecimento adquirido.
+* **Arquivo `README.md`:** Este arquivo.
 
-To learn more about Next.js, take a look at the following resources:
+**Recursos**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Documentação oficial do Swiper:** [https://swiperjs.com/react](https://swiperjs.com/swiper-api)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**Contribuições**
 
-## Deploy on Vercel
+Este repositório está aberto a contribuições. Se você tiver alguma dúvida, sugestão ou correção, sinta-se à vontade para abrir um issue ou enviar um pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Contato**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Se você tiver alguma dúvida ou comentário, entre em contato comigo através do GitHub ou do meu email.
+
+<!-- **Links Úteis** -->
+
+<!-- * **GitHub:** [https://github.com/](https://github.com/) -->
+<!-- * **Site:** [https://www.website.com/](https://www.website.com/) -->
