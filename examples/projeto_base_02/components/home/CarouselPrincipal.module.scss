@@ -1,0 +1,176 @@
+@mixin extra-small { 
+	@media (max-width: 480px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin small { 
+	@media (min-width: 481px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin medium { 
+	@media (min-width: 601px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin large { 
+	@media (min-width: 769px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin extra-large { 
+	@media (min-width: 1200px) {  
+	  @content; 
+	} 
+  }
+
+.carousel swiper-container swiper-slide {
+	@import '../../styles/variaveis.scss';
+	z-index: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100vw;
+	height: auto;
+	flex-direction: column-reverse;
+
+	@include large(){
+		height: 50vw;
+		position: relative;
+		flex-direction: row;
+		max-height: calc(100vh - 100px);
+	}
+
+	img{
+		object-fit: cover;
+		width: 100vw;
+		height: 50vw;
+		object-position: center bottom;
+		
+
+		@include large(){
+			width: 100vw;
+			height: 50vw;
+			max-height: calc(100vh - 100px);
+			position: absolute;
+			left: 0;
+			z-index: -1;
+			top: 0;
+		}
+	}
+
+	> div{
+		width: calc(100vw - 2rem);
+		height: auto;
+		background-color: $amareloClaro;
+		border-radius: 0.625rem;
+		padding: 1rem;
+
+		@include large(){
+			margin-right: 6%;
+			background-color: $amareloClaro;
+			border-radius: 0.625rem;
+			width: 24rem;
+			padding-left: 1rem;
+			padding-top: 1rem;
+			padding-right: 1rem;
+			padding-bottom: 1rem;
+		}
+
+		@include extra-large(){
+			margin-right: 6%;
+			width: calc(40.1875rem - 5.125rem);
+			height: calc(27.6875rem - 6.1875rem);
+			background-color: $amareloClaro;
+			border-radius: 0.625rem;
+			padding-left: 2.4375rem;
+			padding-top: 3.875rem;
+			padding-right: 2.6875rem;
+			padding-bottom: 2.3125rem;
+			padding-bottom: 1rem;
+		}
+
+		h2{
+			font-family: $poppins;
+			font-size: 1rem;
+			font-weight: 600;
+			letter-spacing: 2px;
+		}
+
+		h1{
+			font-family: $poppins;
+			font-size: 2rem;
+			font-weight: 700;
+			margin-top: 0.25rem;
+			color: $amareloEscuro;
+
+			@include small(){
+				font-size: 2.5rem;
+			}
+
+			@include medium(){
+				font-size: 3rem;
+			}
+
+			@include large(){
+				font-size: 2rem;
+				max-width: 90%;
+			}
+
+			@include extra-large(){
+				font-size: 3.25rem;
+				max-width: 90%;
+			}
+		}
+
+		p{
+			margin-top: 1.0625rem;
+			font-family: $poppins;
+			font-size: 1.125rem;
+			font-weight: 500;
+			color: $black;
+			line-height: 1.5rem;
+		}
+
+		a{
+			margin-top: 2.25rem;
+			display: flex;
+			width: 13.875rem;
+			height: 4.625rem;
+			background-color: $amareloEscuro;
+			border: none;
+			font-family: $poppins;
+			font-size: 1.125rem;
+			font-weight: 600;
+			color: $light;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			position: relative;
+
+			&::before{
+				content: '';
+				width: 100%;
+				height: 100%;
+				background-color: $black;
+				margin-right: 0.625rem;
+				top: 0;
+				left: 0;
+				position: absolute;
+				z-index: -1;
+				opacity: 0.1;
+			}
+
+			&:hover{
+				opacity: 0.99;
+			}
+		}
+	}
+
+}
