@@ -8,7 +8,7 @@ Para instalar o pacote do swiper, basta executar o comando abaixo:
 npm install swiper
 ```
 
-De acordo com a documentação do swiper, se eu quero impportar elementos customizados a partir do node_modules, eu preciso registrar manualmente. No caso do react, para facilitar o uso, importarei os elementos customizados swiper-container e swiper-slide no componente que eu quero usar.
+De acordo com a documentação do swiper, se eu quero importar elementos customizados a partir do node_modules, eu preciso registrar manualmente. No caso do react, para facilitar o uso, importarei os elementos customizados swiper-container e swiper-slide no componente que eu quero usar.
 
 ```javascript
 import { register } from "swiper/element";
@@ -30,9 +30,9 @@ em caso de typescript, é necessário criar um arquivo de declaração para o sw
 ```typescript
 declare namespace JSX {
 	interface IntrinsicElements {
-	  'swiper-container': any;
-	  'swiper-slide': any;
-	}
+	    'swiper-container': any;
+	    'swiper-slide': any;
+	  }
   }
 ```
 
