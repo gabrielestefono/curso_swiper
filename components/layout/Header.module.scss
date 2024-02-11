@@ -43,6 +43,10 @@
 		text-decoration: none;
 		color: $corLogo;
 
+		@include extra-large(){
+			margin-left: 4rem;
+		}
+
 		div{
 			width: 3.125rem;
 			height: 2rem;
@@ -97,13 +101,13 @@
 	
 	.icones{
 		display: flex;
-		margin-right: 6.25rem;
 		margin-right: 1rem;
 		align-items: center;
 		gap: 1.5rem;
 
 		@include extra-large(){
 			gap: 2.8125rem;
+			margin-right: 6.25rem;
 		}
 
 		li{
