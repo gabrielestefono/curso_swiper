@@ -1,0 +1,41 @@
+@mixin extra-small { 
+	@media (max-width: 480px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin small { 
+	@media (min-width: 481px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin medium { 
+	@media (min-width: 601px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin large { 
+	@media (min-width: 769px) { 
+	  @content; 
+	} 
+  }
+  
+  @mixin extra-large { 
+	@media (min-width: 1200px) {  
+	  @content; 
+	} 
+  }
+
+.layout{
+	width: 100vw;
+
+	@include large(){
+		min-height: calc(100vh - 48.875rem);
+	}
+
+	@include extra-large(){
+		min-height: calc(100vh - 37.2rem);
+	}
+}
