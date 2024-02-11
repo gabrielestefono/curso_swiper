@@ -41,19 +41,21 @@
 	@include large(){
 		height: 50vw;
 		position: relative;
-		max-height: 44.5625rem;
 		flex-direction: row;
+		max-height: calc(100vh - 100px);
 	}
 
 	img{
 		object-fit: cover;
 		width: 100vw;
 		height: 50vw;
+		object-position: center bottom;
 		
 
 		@include large(){
 			width: 100vw;
 			height: 50vw;
+			max-height: calc(100vh - 100px);
 			position: absolute;
 			left: 0;
 			z-index: -1;
