@@ -4,7 +4,9 @@ import { useState } from 'react';
 export default function Header() {
 	const [sidebar, setSidebar] = useState(false);
 	const showSidebar = () => {
+		scrollTo(0, 0);
 		setSidebar(!sidebar);
+		document.body.style.overflowY = sidebar ? 'auto' : 'hidden';
 	}
 	return (
 		<nav className={estilo.header}>
