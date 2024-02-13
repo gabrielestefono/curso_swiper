@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import estilo from './Header.module.scss';
 import { useState } from 'react';
 
@@ -10,15 +11,15 @@ export default function Header() {
 	}
 	return (
 		<nav className={estilo.header}>
-			<a href='/'>
+			<Link href='/'>
 				<div></div>
 				<span>WeBest</span>
-			</a>
+			</Link>
 			<ul className={estilo.links}>
-				<li><a href="/">Home</a></li>
-				<li><a href="/">Shop</a></li>
-				<li><a href="/">About</a></li>
-				<li><a href="/">Contact</a></li>
+				<li><Link href='/'>Home</Link></li>
+				<li><Link href='/'>Shop</Link></li>
+				<li><Link href='/'>About</Link></li>
+				<li><Link href='/'>Contact</Link></li>
 			</ul>
 			<ul className={estilo.icones}>
 				<li>
@@ -47,10 +48,10 @@ export default function Header() {
 						<div className={estilo.icone3}>
 						</div>
 					</li>
-					<li><a href="/">Home</a></li>
-					<li><a href="/">Shop</a></li>
-					<li><a href="/">About</a></li>
-					<li><a href="/">Contact</a></li>
+					<li><Link href='/'>Home</Link></li>
+					<li><Link href='/'>Shop</Link></li>
+					<li><Link href='/'>About</Link></li>
+					<li><Link href='/'>Contact</Link></li>
 				</ul>
 			</div>
 		</nav>

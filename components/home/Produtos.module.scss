@@ -1,0 +1,58 @@
+@mixin extra-small { 
+	@media (max-width: 480px){
+	  	@content;
+	}
+}
+
+@mixin small { 
+	@media (min-width: 481px){
+		@content;
+	}
+}
+
+@mixin medium { 
+	@media (min-width: 601px){
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: 769px){
+		@content;
+	}
+}
+
+@mixin extra-large {
+	@media (min-width: 1200px){
+		@content;
+	}
+}
+
+.produtos{
+	@import '../../styles/variaveis.scss';
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3.5rem;
+
+	> h2{
+		font-size: 2.5rem;
+		font-family: $poppins;
+		line-height: 1.2;
+		font-weight: 700;
+	}
+
+	>div{
+		margin-top: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		width: calc(100vw - 2rem);
+		gap: 2rem;
+		justify-content: center;
+
+		@include extra-large(){
+			max-width: 77.5rem;
+		}
+	}
+}

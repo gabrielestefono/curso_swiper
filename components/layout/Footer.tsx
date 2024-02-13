@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import estilo from './Footer.module.scss';
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
 			<div>
 				<div className={estilo.divlogo}>
 					<div className={estilo.logo}>
-						<a href="/">WeBest</a>
+						<Link href="/">WeBest</Link>
 						<div>
 							<span>Marechal Cândido Rondon - PR</span>
 							<span>(45) 9-9999-9999</span>
@@ -15,16 +16,16 @@ export default function Footer() {
 					<div>
 						<ul>
 							<li className={estilo.ulTitle}>Links</li>
-							<li><a href="/">Início</a></li>
-							<li><a href="/">Loja</a></li>
-							<li><a href="/">Sobre</a></li>
-							<li><a href="/">Contato</a></li>
+							<li><Link href="/">Início</Link></li>
+							<li><Link href="/">Loja</Link></li>
+							<li><Link href="/">Sobre</Link></li>
+							<li><Link href="/">Contato</Link></li>
 						</ul>
 						<ul>
 							<li className={estilo.ulTitle}>Ajuda</li>
-							<li><a href="/">Opções de Pagamento</a></li>
-							<li><a href="/">Retornos?</a></li>
-							<li><a href="/">Política de Privacidade</a></li>
+							<li><Link href="/">Opções de Pagamento</Link></li>
+							<li><Link href="/">Retornos?</Link></li>
+							<li><Link href="/">Política de Privacidade</Link></li>
 						</ul>
 					</div>
 				</div>
