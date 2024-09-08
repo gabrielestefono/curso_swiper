@@ -5,23 +5,23 @@
 ```jsx
 <!-- Slider main container -->
 <div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
 </div>
 ```
 
@@ -106,17 +106,19 @@ new Swiper(swiperContainer, parameters)- initialize swiper with options
 - swiperContainer - HTMLElement or string (with CSS Selector) of swiper container HTML element. Required.
 - parameters - object - object with Swiper parameters. Optional.
 - **Method returns initialized Swiper instance**
-- 
+-
+
 For example:
 
 ```javascript
 const swiper = new Swiper('.swiper', {
-  speed: 400,
-  spaceBetween: 100,
+    speed: 400,
+    spaceBetween: 100,
 });
 ```
 
-**After** you initialize Swiper it is possible to access to Swiper's instance on its HTMLElement. It is `swiper` property of Swiper's HTML container element:
+**After** you initialize Swiper it is possible to access to Swiper's instance on its HTMLElement. It is `swiper`
+property of Swiper's HTML container element:
 
 ````javascript
 const swiper = document.querySelector('.swiper').swiper;
@@ -127,3 +129,12 @@ swiper.slideNext();
 
 ## Parameters
 
+Let's look on list of all available parameters:
+
+---
+
+| Name | Type | Default | Description                                                                  |
+|------|------|---------|------------------------------------------------------------------------------|
+| a11y | 	any |         | Object with a11y parameters or boolean true to enable with default settings. |
+|allowSlideNext|	boolean| 	true| Set to false to disable swiping to next slide direction (to right or bottom) |
+|allowSlidePrev|boolean|true|Set to false to disable swiping to previous slide direction (to left or top)|
